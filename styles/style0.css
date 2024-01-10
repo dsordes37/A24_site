@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}body{
+    width: 100vw;
+}
+
+.flex{
+    display: flex;
+}.flex_cent{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}.space_bt{
+    justify-content: space-between;
+}a{
+    color: currentColor;
+    text-decoration: none;
+}
+
+.car_sldr{
+    overflow-x: scroll;
+    width: 100vw;
+}
+#destaques{
+    width: 100vw;
+    height: 100vh;
+}#destaques .car_item{
+    min-width: 100vw;
+    height: 85vh;
+
+    background-size: cover;
+}#destaques .car_sldr::-webkit-scrollbar{
+    background-color: transparent;
+    height: 10px;
+}#destaques .car_sldr::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 10px;
+    box-shadow: 10px 0px 0px 0px black;
+}#destaques .car_sldr::-webkit-scrollbar-thumb::after{
+    content: ' ';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 20px;
+    background-color: green;
+}
